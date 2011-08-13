@@ -17,6 +17,14 @@ class Tools::Throw
       results << detailed_roll if detailed
     end
     return results
+  end  
+  
+  # Returns the dice as a string with the format aDx,bDy,cDz+n, where a,b,c are the number of dices,
+  # x,y,z are the number of sides and n the offset. Example "D6,D20,D100+8", etc.
+  def to_s
+    temp_dices = dices.clone
+    temp_dices.each do 
+    return "D#{@sides}"
   end
   
   private 
