@@ -22,7 +22,7 @@ class Tools::Die
   end
   
   # Return true if the dice are equal, i.e. they have the same number of sides.
-  def equals die
+  def eql? die
     return false if die==nil or die.sides!=@sides
     return true
   end

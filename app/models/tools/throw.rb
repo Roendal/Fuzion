@@ -27,10 +27,10 @@ class Tools::Throw
     temp_dice = dice.sort_by{|die| die.sides}    
     last_die = nil
     temp_dice.each do |temp_die|
-      if !temp_die.equals(last_die)
+      if !temp_die.eql? last_die
         last_die = temp_die
         throw_dice << temp_die
-        throw_dice_number << temp_dice.count{|die| die.equals(temp_die)}
+        throw_dice_number << temp_dice.count{|die| die.eql? temp_die}
       end
     end
     throw_string = ""
