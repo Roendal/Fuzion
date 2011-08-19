@@ -10,8 +10,10 @@ Gem::Specification.new do |s|
 
 	# Gem dependencies
 	#
-	# SQL foreign keys
-	s.add_runtime_dependency('foreigner', '~> 0.9.1')
+  # SQL foreign keys
+  s.add_runtime_dependency('foreigner', '~> 0.9.1')
+  # RPG Tools
+  s.add_runtime_dependency('rpg-tools', '~> 0.1.0')
 
 	# Development Gem dependencies
 	#
