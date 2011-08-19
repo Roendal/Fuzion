@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-	s.name = "fuzion-rpg"
+	s.name = "fuzion_rpg"
 	s.version = "0.0.1"
 	s.authors = ["Eduardo Casanova Cuesta"]
 	s.summary = "#TODO"

@@ -6,7 +6,7 @@ h2. Installation
 
 Add to your Gemfile:
 <pre><code>
-  gem 'fuzion-rpg'
+  gem 'fuzion_rpg'
 </code></pre>
 Then run:
 <pre><code>
@@ -14,7 +14,7 @@ Then run:
 </code></pre>
 Run install script:
 <pre><code>
-  rails g fuzion-rpg:install
+  rails g fuzion_rpg:install
 </code></pre>
 And don't forget to migrate you database:
 <pre><code>

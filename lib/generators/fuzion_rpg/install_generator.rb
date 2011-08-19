@@ -10,12 +10,12 @@ class FuzionRPG::InstallGenerator < Rails::Generators::Base #:nodoc:
   end
   
   def create_initializer_file
-    template 'initializer.rb', 'config/initializers/fuzion-rpg.rb'
+    template 'initializer.rb', 'config/initializers/fuzion_rpg.rb'
   end
   
   def create_migration_file
     require 'rake'
     Rails.application.load_tasks
-    Rake::Task['fuzion-rpg_engine:install:migrations'].invoke
+    Rake::Task['fuzion_rpg_engine:install:migrations'].invoke
   end
 end

@@ -8,4 +8,4 @@ module FuzionRPG
 end
 # reopen ActiveRecord and include all the above to make
 # them available to all our models if they want it
-require 'fuzion-rpg/engine' 
+require 'fuzion_rpg/engine' 

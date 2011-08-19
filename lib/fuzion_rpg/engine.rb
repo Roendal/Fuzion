@@ -4,7 +4,7 @@ require 'foreigner'
 module FuzionRPG
   class Engine < Rails::Engine
 =begin    
-    initializer "fuzion-rpg.models.*whatever*" do
+    initializer "fuzion_rpg.models.*whatever*" do
       ActiveSupport.on_load(:active_record) do
         include FuzionRPG::Models::Whatever
       end
