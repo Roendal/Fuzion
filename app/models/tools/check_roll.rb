@@ -1,6 +1,7 @@
 class Tools::CheckRoll
 
-  attr_accessor :throw, :threshold, :rolling_chances, :greater_than_threshold, :equal_than_threshold, :result
+  attr_accessor :throw, :threshold, :rolling_chances, :greater_than_threshold, :equal_than_threshold
+  attr_reader :result
   def initialize throw, threshold, rolling_chances=1, greater_than_threshold=true, equal_than_threshold=true
     @throw = throw
     @threshold = threshold
@@ -26,7 +27,7 @@ class Tools::CheckRoll
     roll
   end
 
-  def is_succesful?
+  def is_successful?
     roll if @result.blank?
     return @result[0]
   end  
