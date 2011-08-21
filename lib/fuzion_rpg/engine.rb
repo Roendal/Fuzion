@@ -1,14 +1,12 @@
 # Database foreign keys
 require 'foreigner'
 
-module FuzionRPG
+module Fuzion
   class Engine < Rails::Engine
-=begin    
-    initializer "fuzion_rpg.models.*whatever*" do
+    initializer "fuzion_rpg.models.character_owner" do
       ActiveSupport.on_load(:active_record) do
-        include FuzionRPG::Models::Whatever
+        include Fuzion::Models::CharacterOwner
       end
     end
-=end
   end
 end

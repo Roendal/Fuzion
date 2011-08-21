@@ -1,4 +1,4 @@
-class FuzionRPG::InstallGenerator < Rails::Generators::Base #:nodoc:
+class FuzionRpg::InstallGenerator < Rails::Generators::Base #:nodoc:
   include Rails::Generators::Migration
   
   source_root File.expand_path('../templates', __FILE__)

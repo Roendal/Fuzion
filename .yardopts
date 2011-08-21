@@ -1,3 +1,2 @@
 lib/**/*.rb
 app/**/*.rb
-app/models/tools/*.rb
