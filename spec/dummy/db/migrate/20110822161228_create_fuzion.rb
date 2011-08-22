@@ -1,5 +1,5 @@
 class CreateFuzion < ActiveRecord::Migration
-  def up
+  def self.up
     create_table :characters do |t|
       t.string :name
       t.string :surname
@@ -13,6 +13,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :weapons do |t|
+      t.string :type
       t.string :name
       t.integer :price
 
@@ -20,6 +21,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :armors do |t|
+      t.string :type
       t.string :name
       t.integer :price
 
@@ -27,6 +29,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :consumables do |t|
+      t.string :type
       t.string :name
       t.integer :price
 
@@ -34,7 +37,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
   end
   
-  def down
+  def self.down
     drop_table :characters
     drop_table :weapons
     drop_table :armors

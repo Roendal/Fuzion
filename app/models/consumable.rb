@@ -1,2 +1,3 @@
-class Consumable < ActiveRecord::Base
+class Consumable < Article
+  set_table_name 'consumables'
 end

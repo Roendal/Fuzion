@@ -1,2 +1,3 @@
-class Weapon < ActiveRecord::Base
+class Weapon < Article
+  set_table_name 'weapons'
 end
