@@ -1,6 +1,0 @@
-source 'http://rubygems.org'
-
-gem 'fuzion_rpg', :path => '../../../fuzion_rpg'
-
-gem 'mysql', '2.8.1'
-

@@ -1,4 +1,4 @@
-module FuzionRPG
+module Fuzion
   module Models
     module CharacterOwner
       def self.included(mod)
@@ -13,7 +13,7 @@ module FuzionRPG
           else
             has_one :character
           end
-          include FuzionRPG::Models::CharacterOwner::InstanceMethods
+          include Fuzion::Models::CharacterOwner::InstanceMethods
         end
       end
 

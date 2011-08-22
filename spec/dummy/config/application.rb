@@ -7,7 +7,7 @@ require "action_view/railtie"
 require "action_mailer/railtie"
 
 Bundler.require
-require "fuzion_rpg"
+require "fuzion"
 
 module Dummy
   class Application < Rails::Application

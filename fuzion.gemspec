@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
 	s.summary = "A Rails engine wrapping Fuzion Role Playing Game (RPG) rules."
 	s.description = "A Rails engine wrapping Fuzion Role Playing Game (RPG) rules."
 	s.email = "ecasanovac@gmail.com"
-	s.homepage = "https://github.com/roendal/fuzion-rpg"
+	s.homepage = "https://github.com/roendal/fuzion"
 	s.files = `git ls-files`.split("\n")
 
 	# Gem dependencies

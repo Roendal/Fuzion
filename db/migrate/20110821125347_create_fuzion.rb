@@ -1,4 +1,4 @@
-class CreateFuzionRPG < ActiveRecord::Migration
+class CreateFuzion < ActiveRecord::Migration
   def up
     create_table :characters do |t|
       t.string :name

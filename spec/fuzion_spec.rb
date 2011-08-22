@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe FuzionRPG do
+describe Fuzion do
   it "should be valid" do
-    FuzionRPG.should be_a(Module)
+    Fuzion.should be_a(Module)
   end
 end
