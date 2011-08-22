@@ -8,10 +8,9 @@ module Fuzion
       module ClassMethods
         def acts_as_character_owner multiple=false
           if multiple
-            has_many :characters
-            has_one :active_character, :class_name => 'Character', :conditions => ['active = ?', true]
+            #TODO
           else
-            has_one :character
+            has_one :character, :as => :owner
           end
           include Fuzion::Models::CharacterOwner::InstanceMethods
         end
