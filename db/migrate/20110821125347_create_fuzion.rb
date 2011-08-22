@@ -13,6 +13,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :weapons do |t|
+      t.string :type
       t.string :name
       t.integer :price
 
@@ -20,6 +21,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :armors do |t|
+      t.string :type
       t.string :name
       t.integer :price
 
@@ -27,6 +29,7 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :consumables do |t|
+      t.string :type
       t.string :name
       t.integer :price
 
