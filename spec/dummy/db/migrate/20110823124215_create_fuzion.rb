@@ -28,8 +28,8 @@ class CreateFuzion < ActiveRecord::Migration
       t.integer :body, :default => 5, :null => false
       
       #Derived characteristics
-      t.integer :stun, :default => 25, :null => false
-      t.integer :hits, :default => 25, :null => false
+      t.integer :stun, :default => 5, :null => false
+      t.integer :hits, :default => 5, :null => false
 
       t.timestamps
     end

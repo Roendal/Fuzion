@@ -8,6 +8,7 @@ require "action_mailer/railtie"
 
 Bundler.require
 require "fuzion"
+require "rpg-tools"
 
 module Dummy
   class Application < Rails::Application

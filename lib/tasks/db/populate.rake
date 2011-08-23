@@ -25,13 +25,14 @@ namespace :db do
       puts 'Character population'
       time_start = Time.now      
       User.all.each do |user|
-        Character.create! :name => Forgery::Name.first_name,
+        char = Character.create! :name => Forgery::Name.first_name,
                           :surname => Forgery::Name.last_name,
                           :age => Forgery::Basic.number(:at_least => 20, :at_most => 50),
                           :profession => Forgery::Name.company_name,
                           :background => Forgery::LoremIpsum.sentences(1,:random => true),
                           :active => true,
                           :owner => user
+        CharSheet.create! :character => char
       end
       time_end = Time.now 
       puts '   -> ' +  (time_end - time_start).round(4).to_s + 's'
