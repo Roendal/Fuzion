@@ -1,6 +1,8 @@
 require 'rpg-tools'
 
 module Fuzion
+  autoload :DiceSystem, 'fuzion/dice_system'
+  
   module Models
     autoload :CharacterOwner, 'fuzion/models/character_owner'
   end
