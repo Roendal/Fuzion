@@ -1,10 +1,17 @@
+require 'rpg-tools'
+
 module Fuzion
   module Models
     autoload :CharacterOwner, 'fuzion/models/character_owner'
   end
+
+  require 'rpg-tools'
   
-  mattr_accessor :campaign_levels
-  @@campaign_levels = [:everyday, :competent, :heroic, :incredible, :legendary, :superheroic]
+  mattr_accessor :campaign_level
+  @@campaign_level = :heroic
+  
+  mattr_accessor :dice_system
+  @@dice_system = :interlock
   
   mattr_accessor :characteristics_points
   @@characteristics_points = {:everyday => 20,:competent => 30, :heroic => 50, :incredible => 60, :legendary => 80, :superheroic => 100}

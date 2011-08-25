@@ -46,6 +46,16 @@ class CreateFuzion < ActiveRecord::Migration
       t.string :type
       t.string :name
       t.integer :price
+      
+      t.boolean :head, :default => false, :null => false
+      t.boolean :torso, :default => false, :null => false
+      t.boolean :left_arm, :default => false, :null => false
+      t.boolean :right_arm, :default => false, :null => false
+      t.boolean :left_leg, :default => false, :null => false
+      t.boolean :right_leg, :default => false, :null => false
+      t.boolean :hands, :default => false, :null => false
+      t.boolean :feet, :default => false, :null => false
+      
 
       t.timestamps
     end
