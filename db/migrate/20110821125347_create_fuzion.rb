@@ -38,6 +38,9 @@ class CreateFuzion < ActiveRecord::Migration
       t.string :type
       t.string :name
       t.integer :price
+      
+      t.boolean :two_handed, :default => false, :null => false
+      t.boolean :off_hand_equippable, :default => false, :null => false
 
       t.timestamps
     end
@@ -54,8 +57,7 @@ class CreateFuzion < ActiveRecord::Migration
       t.boolean :left_leg, :default => false, :null => false
       t.boolean :right_leg, :default => false, :null => false
       t.boolean :hands, :default => false, :null => false
-      t.boolean :feet, :default => false, :null => false
-      
+      t.boolean :feet, :default => false, :null => false      
 
       t.timestamps
     end
@@ -72,6 +74,8 @@ class CreateFuzion < ActiveRecord::Migration
       t.references :article, :polymorphic => true, :null => false
       t.integer :character_id, :null => false
       t.integer :quantity, :default => 1, :null => false
+      t.boolean :equipped, :default => false, :null => false
+      t.boolean :equipped_off_hand, :default => false, :null => false
       
       t.timestamps
     end

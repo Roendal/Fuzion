@@ -8,5 +8,10 @@ class Character < ActiveRecord::Base
     char_sheet.get_characteristic name
   end
   alias :get_c :get_characteristic
+  
+  def initiative_throw randomize=true
+    return Fuzion::DiceSystem.basic_throw.add_offset get_c :ref if randomize
+    return get_c :ref
+  end
 
 end
