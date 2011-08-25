@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110825150238) do
+ActiveRecord::Schema.define(:version => 20110825155922) do
 
   create_table "armors", :force => true do |t|
     t.string   "type"
@@ -68,9 +68,9 @@ ActiveRecord::Schema.define(:version => 20110825150238) do
   end
 
   create_table "items", :force => true do |t|
-    t.integer  "article_id",                           :null => false
-    t.string   "article_type",                         :null => false
-    t.integer  "character_id",                         :null => false
+    t.integer  "owned_id",                             :null => false
+    t.string   "owned_type",                           :null => false
+    t.integer  "owner_id",                             :null => false
     t.integer  "quantity",          :default => 1,     :null => false
     t.boolean  "equipped",          :default => false, :null => false
     t.boolean  "equipped_off_hand", :default => false, :null => false

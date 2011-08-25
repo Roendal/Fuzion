@@ -2,7 +2,7 @@ class Character < ActiveRecord::Base
 
   belongs_to :owner, :polymorphic => :true
   has_one :char_sheet
-  has_many :items
+  has_many :items, :foreign_key => :owner_id
   def get_characteristic name
     return nil if char_sheet.nil?
     char_sheet.get_characteristic name

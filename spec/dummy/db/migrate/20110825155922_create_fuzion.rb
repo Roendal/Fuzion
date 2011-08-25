@@ -71,8 +71,8 @@ class CreateFuzion < ActiveRecord::Migration
     end
     
     create_table :items do |t|      
-      t.references :article, :polymorphic => true, :null => false
-      t.integer :character_id, :null => false
+      t.references :owned, :polymorphic => true, :null => false
+      t.integer :owner_id, :null => false
       t.integer :quantity, :default => 1, :null => false
       t.boolean :equipped, :default => false, :null => false
       t.boolean :equipped_off_hand, :default => false, :null => false
