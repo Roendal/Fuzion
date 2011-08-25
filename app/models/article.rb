@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
+  self.abstract_class = true 
   
   has_many :items, :as => :owned
-  self.abstract_class = true 
   
 end
