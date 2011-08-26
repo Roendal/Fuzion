@@ -1,4 +1,14 @@
-Factory.define :user do |u|
-  u.sequence(:name) { |n| "User #{ n }" }
-  u.sequence(:email) { |n| "user#{ n }@user.com" }
+FactoryGirl.define do
+  sequence :email do |n|
+    "user#{n}@example.com"
+  end
+
+  sequence :name do |n|
+    "user#{n}@example.com"
+  end
+
+  factory :user do
+    email
+    name
+  end
 end
