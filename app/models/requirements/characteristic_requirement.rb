@@ -1,0 +1,3 @@
+class CharacteristicRequirement < Requirement
+
+end
